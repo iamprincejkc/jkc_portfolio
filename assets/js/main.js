@@ -78,4 +78,6 @@ sr.reveal(`.perfil, .contact__form`);
 sr.reveal(`.info`, { origin: 'left', delay: 400 });
 sr.reveal(`.skills`, { origin: 'left', delay: 700 });
 sr.reveal(`.about`, { origin: 'right', delay: 1000 });
+sr.reveal(`.family-tree`, { origin: 'bottom', delay: 600 });
+sr.reveal(`.learning-quote`, { origin: 'bottom', delay: 1000 });
 sr.reveal(`.projects__card, .services__card, .experience__card`, { interval: 100 });
