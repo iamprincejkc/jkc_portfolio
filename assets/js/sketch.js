@@ -119,8 +119,8 @@ class Particle {
   // Draw particle and connect it with a line
   // Draw a line to another
   display(other) {
-    stroke(255, this.lifespan * 1.5);
-    fill(255, this.lifespan * 1);
+    stroke(255, this.lifespan * 0.8);
+    fill(255, this.lifespan * .3);
     ellipse(this.position.x, this.position.y, 8, 8);
     // If we need to draw a line
     if (other) {
