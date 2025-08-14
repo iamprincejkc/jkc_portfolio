@@ -911,9 +911,10 @@ row-gap: 2.5rem;
   @media screen and (min-width:1500px) {
     
     .nav{
+      margin-top: 1.5%;
       width: max-content;
       height: max-content;
-      pad: 2rem 1rem;
+      padding: 2rem 1rem;
       left: initial;
       right: 3rem;
       top: 0;
