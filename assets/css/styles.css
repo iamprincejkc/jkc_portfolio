@@ -38,12 +38,9 @@
       hsl(220, 30%, 8%) 360deg);
 
   /* Neon glow effects */
-  --neon-glow: 0 0 20px hsl(195, 100%, 50%),
-    0 0 40px hsl(195, 100%, 50%),
-    0 0 60px hsl(195, 100%, 50%);
+  --neon-glow: 0 0 3px hsl(195, 100%, 50%), 0 0 10px hsl(195, 100%, 50%), 0 0 20px hsl(195, 100%, 50%);
 
-  --subtle-glow: 0 0 10px hsla(195, 100%, 50%, 0.3),
-    0 0 20px hsla(195, 100%, 50%, 0.2);
+  --subtle-glow: 0 0 10px hsla(195, 100%, 50%, 0.3), 0 0 20px hsla(195, 100%, 50%, 0.2);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -53,9 +50,9 @@
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 
   /*========== Font weight ==========*/
   --font-regular: 400;
@@ -100,7 +97,7 @@
 
 /* Electric skill items */
 .skills__item:hover {
-  transform: translateY(-.25rem);
+  transform: translateY(-0.25rem);
   filter: drop-shadow(0 0 10px hsla(195, 100%, 50%, 0.6));
 }
 
@@ -139,7 +136,7 @@
 
 /* Electric scroll up button */
 .scrollup:hover {
-  transform: translateY(-.5rem);
+  transform: translateY(-0.5rem);
   box-shadow: var(--subtle-glow);
   background-color: hsla(195, 100%, 50%, 0.1);
 }
@@ -181,7 +178,7 @@
 .about,
 .skills {
   border: 1px solid hsla(195, 100%, 50%, 0.1);
-  transition: border-color .4s, box-shadow .4s;
+  transition: border-color 0.4s, box-shadow 0.4s;
 }
 
 .info:hover,
@@ -214,7 +211,7 @@
 .projects__img,
 .info__img,
 .about__img {
-  transition: filter .4s, transform .4s;
+  transition: filter 0.4s, transform 0.4s;
 }
 
 .projects__img:hover,
@@ -241,7 +238,7 @@
 
 /* Add cursor to main title */
 .info__name::after {
-  content: '';
+  content: "";
   animation: electricCursor 1.5s infinite;
 }
 
@@ -250,7 +247,7 @@
 /* Electric glow for experience data containers only */
 .experience__data {
   border: 1px solid hsla(195, 100%, 50%, 0.1);
-  transition: border-color .4s, box-shadow .4s, transform .4s;
+  transition: border-color 0.4s, box-shadow 0.4s, transform 0.4s;
 }
 
 .experience__data:hover {
@@ -267,8 +264,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
@@ -382,7 +379,7 @@ img {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  transition: background-color .6s;
+  transition: background-color 0.6s;
 }
 
 /* Active link */
@@ -423,7 +420,7 @@ img {
 .perfil__name {
   font: var(--font-semi-bold) var(--biggest-font-size) var(--second-font);
   margin-bottom: 1rem;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
 }
 
 .perfil__buttons {
@@ -450,7 +447,6 @@ img {
   height: 2rem;
   background-color: var(--first-color);
   border-radius: 50%;
-
 }
 
 .info__name {
@@ -461,7 +457,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: .5rem;
+  column-gap: 0.5rem;
 }
 
 .info__image {
@@ -513,7 +509,7 @@ img {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  transition: background-color .4s, color .4s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .about__link:hover {
@@ -558,7 +554,7 @@ img {
 
 .skills__item {
   width: 1.5rem;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .skills__item:hover {
@@ -571,7 +567,6 @@ img {
   align-items: center;
   gap: 1.5rem;
   margin-block: 1.5rem;
-
 }
 
 .skills__description {
@@ -627,7 +622,6 @@ img {
   overflow: hidden;
   border-radius: 1.5rem;
   margin-bottom: 1.5rem;
-
 }
 
 .projects__img {
@@ -636,7 +630,7 @@ img {
 
 .projects__name {
   font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .projects__description {
@@ -646,7 +640,7 @@ img {
 
 .projects__skill {
   width: 1rem;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .projects__skill:hover {
@@ -657,10 +651,10 @@ img {
   width: max-content;
   height: 34px;
   background-color: var(--white-color);
-  padding-inline: .75rem;
+  padding-inline: 0.75rem;
   display: flex;
   align-items: center;
-  column-gap: .75rem;
+  column-gap: 0.75rem;
   border-radius: 4rem;
   margin-bottom: 1.5rem;
 }
@@ -669,8 +663,8 @@ img {
   color: var(--white-color);
   display: inline-flex;
   align-items: center;
-  column-gap: .5rem;
-  transform: color .4s;
+  column-gap: 0.5rem;
+  transform: color 0.4s;
 }
 
 .projects__button i {
@@ -712,13 +706,12 @@ img {
   position: absolute;
   top: -1rem;
   right: -1rem;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .services__name {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
-
 }
 
 .services__description {
@@ -751,7 +744,7 @@ img {
 
 .experience__profession {
   font-size: var(--h3-font-size);
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .experience__date {
@@ -811,7 +804,6 @@ img {
 /*=============== FOOTER ===============*/
 .footer {
   padding-block: 2rem 8rem;
-
 }
 
 .footer__container {
@@ -832,7 +824,7 @@ img {
 
 .footer__link {
   color: var(--white-color);
-  transition: color .4s;
+  transition: color 0.4s;
 }
 
 .footer__link:hover {
@@ -854,7 +846,7 @@ img {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  transition: background-color .4s, color .4s;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 .footer__social-link:hover {
@@ -879,7 +871,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 30%);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -1037,7 +1029,6 @@ img {
     width: 370px;
     padding: 1.5rem;
     border-radius: 2rem;
-
   }
 
   .info {
@@ -1070,7 +1061,6 @@ img {
 
   .skill__title {
     font-size: var(--h3-font-size);
-
   }
 
   .projects__container {
@@ -1220,7 +1210,7 @@ img {
   background: var(--first-color);
   border: 4px solid var(--white-color);
   object-fit: cover;
-  transition: transform .4s, box-shadow .4s;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .tree img:hover {
@@ -1245,7 +1235,7 @@ img {
 
 .tree li:before,
 .tree li:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 50%;
@@ -1267,7 +1257,7 @@ img {
 }
 
 .tree ul ul:before {
-  content: '';
+  content: "";
   position: absolute;
   top: -73px;
   left: 50%;
@@ -1277,7 +1267,7 @@ img {
 }
 
 .tree li a+a:before {
-  content: '';
+  content: "";
   position: absolute;
   border-bottom: 3px solid var(--first-color);
   top: 8px;
@@ -1292,7 +1282,7 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .person:hover {
@@ -1395,7 +1385,7 @@ img {
   position: relative;
   max-width: 600px;
   border: 2px solid hsla(0, 0%, 100%, 0.1);
-  transition: transform .4s, box-shadow .4s;
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .quote-card:hover {
@@ -1414,7 +1404,7 @@ img {
   margin: 0 auto 1.5rem;
   color: var(--white-color);
   font-size: 1.5rem;
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .quote-card:hover .quote-icon {
@@ -1514,7 +1504,7 @@ img {
 
 .skills-link:hover .skills {
   transform: translateY(-3px);
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
 
 .skills-link:visited,
